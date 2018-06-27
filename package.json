@@ -1,0 +1,24 @@
+{
+  "name": "dialogflow_test",
+  "version": "1.0.0",
+  "description": "testing dialog flow calls",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maheshbsv/dialogflow_test.git"
+  },
+  "author": "mahesh babu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maheshbsv/dialogflow_test/issues"
+  },
+  "homepage": "https://github.com/Maheshbsv/dialogflow_test#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "soap": "^0.24.0"
+  }
+}
