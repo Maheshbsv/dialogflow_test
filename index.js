@@ -1,15 +1,21 @@
-const bodyparser = require('body-parser');
+'use strict';
+
 const express = require('express');
+const bodyParser = require('body-parser');
+const http = require('http');
+
 
 const server = express();
 
-server.use(bodyparser.urlencoded({
-    extended:true
+//tells the system whether you want to use a simple algorithm for shallow parsing (i.e. false) or 
+//complex algorithm for deep parsing that can deal with nested objects (i.e. true).
+server.use(bodyParser.urlencoded({
+    extended: true
 }));
+//tells the system that you want json to be used.
+server.use(bodyParser.json());
 
-server.use(bodyparser.json());
-
-server.post('./', (req, res) => {
+server.post('/', (req, res) => {
     if(req.body.result.action === 'Project'){
         console.log(req.body.result);
         if(req.body.result.parameters.Project === '242'){
@@ -23,9 +29,12 @@ server.post('./', (req, res) => {
                 displayText: "650 is in development. I do not have access to Issue tracker"
             });
         }
-    }    
+
+    }
+    
 });
 
-server.listen((process.env.PORT || 8000), () =>{
-    console.log('Server is up and running ');
+
+server.listen((process.env.PORT || 8000), () => {
+    console.log("Server is up and running...");
 });
