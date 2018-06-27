@@ -1,5 +1,5 @@
-const bodyparser = require('./body-parser');
-const express = require('./express');
+const bodyparser = require('body-parser');
+const express = require('express');
 
 const server = express();
 
@@ -24,4 +24,8 @@ server.post('./', (req, res) => {
             });
         }
     }    
+});
+
+server.listen((process.env.PORT || 8000), () =>{
+    console.log('Server is up and running ');
 });
