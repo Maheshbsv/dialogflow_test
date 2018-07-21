@@ -19,8 +19,12 @@
   "homepage": "https://github.com/Maheshbsv/dialogflow_test#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "btoa": "^1.2.1",
+    "dotenv": "^6.0.0",
     "express": "^4.16.3",
     "http": "0.0.0",
-    "soap": "^0.24.0"
+    "mongodb": "^3.1.1",
+    "soap": "^0.24.0",
+    "xmlhttprequest": "^1.8.0"
   }
 }
