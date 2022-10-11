@@ -24,7 +24,7 @@
     "express": "^4.16.3",
     "http": "0.0.0",
     "mongodb": "^3.1.1",
-    "soap": "^0.24.0",
+    "soap": "^0.45.0",
     "xmlhttprequest": "^1.8.0"
   }
 }
